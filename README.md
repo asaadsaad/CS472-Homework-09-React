@@ -24,7 +24,7 @@ button {
 * The `App` component that maintains the list of products in its state.
 * Pass this state down to the `ProductList` component as props.
 ```typescript
-type Product = { id: number, name: string, price: number, inStock: boolean; };
+interface IProduct { id: number, name: string, price: number, inStock: boolean; };
 
 const [products, setProducts] = useState<Product[]>([
     { id: 1, name: 'Apple', price: 1, inStock: true },
@@ -33,14 +33,14 @@ const [products, setProducts] = useState<Product[]>([
   ]);
 ```
 ## `ProductList` Component:
-* Create a `ProductListComponent` that receives a list of products as a prop and displays them each as a re-usable `Product` component.
+* Create a `ProductList` component that receives a list of products as a prop and displays them each as a re-usable `Product` component.
 * Each product should display its `name`, `price`, and `inStock` status.
 * Use conditional rendering to display the product name in red if it is not in stock.
 
 ## `Product` Component:
-* Create a `ProductComponent` that displays an individual product.
+* Create a `Product` component that displays an individual product.
 * Use props and props spread to pass down the product data.
   
 ## Event Handling and useState:
-* Implement a button in the `ProductComponent` to toggle the in stock status of the product.
+* Implement a button in the `Product` component to toggle the in stock status of the product.
 * Use the useState hook to manage the in stock status.
