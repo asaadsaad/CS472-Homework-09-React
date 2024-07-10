@@ -33,14 +33,14 @@ const [products, setProducts] = useState<Product[]>([
   ]);
 ```
 ## `ProductList` Component:
-* Create a `ProductList` component that receives a list of products as a prop and displays them each as a re-usable `Product` component.
+* Create a `ProductListComponent` that receives a list of products as a prop and displays them each as a re-usable `Product` component.
 * Each product should display its `name`, `price`, and `inStock` status.
 * Use conditional rendering to display the product name in red if it is not in stock.
 
 ## `Product` Component:
-* Create a `Product` component that displays an individual product.
+* Create a `ProductComponent` that displays an individual product.
 * Use props and props spread to pass down the product data.
   
 ## Event Handling and useState:
-* Implement a button in the `Product` component to toggle the in stock status of the product.
+* Implement a button in the `ProductComponent` to toggle the in stock status of the product.
 * Use the useState hook to manage the in stock status.
