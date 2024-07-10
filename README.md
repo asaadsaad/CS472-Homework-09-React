@@ -24,7 +24,9 @@ button {
 * The `App` component that maintains the list of products in its state.
 * Pass this state down to the `ProductList` component as props.
 ```typescript
-const [products, setProducts] = useState([
+type Product = { id: number, name: string, price: number, inStock: boolean; };
+
+const [products, setProducts] = useState<Product[]>([
     { id: 1, name: 'Apple', price: 1, inStock: true },
     { id: 2, name: 'Banana', price: 1, inStock: false },
     { id: 3, name: 'Cherry', price: 2, inStock: true },
