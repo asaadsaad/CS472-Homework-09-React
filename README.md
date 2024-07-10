@@ -4,20 +4,12 @@ Create a React application that displays a list of products. Each product should
 ## Styling:
 Create a CSS file to style the components and import this CSS file into your components.
 ```css
-.product-name {
-  font-size: 1.5rem;
-}
-
 .out-of-stock {
   color: red;
 }
 
 .in-stock {
   color: green;
-}
-
-button {
-  margin-top: 10px;
 }
 ```
 ## `App` Component
