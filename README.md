@@ -1,6 +1,16 @@
 ## CS472-Homework-09-React
 Create a React application that displays a list of products. Each product should have a `name`, `price`, and an `in stock` status. Users should be able to toggle the `inStock` status of a product by clicking a button.
 
+```typescript
+interface IProduct { id: number, name: string, price: number, inStock: boolean; };
+
+const [products, setProducts] = useState<Product[]>([
+    { id: 1, name: 'Apple', price: 1, inStock: true },
+    { id: 2, name: 'Banana', price: 1, inStock: false },
+    { id: 3, name: 'Cherry', price: 2, inStock: true },
+  ]);
+```
+
 ## Styling:
 Create a CSS file to style the components and import this CSS file into your components.
 ```css
@@ -13,21 +23,13 @@ Create a CSS file to style the components and import this CSS file into your com
 }
 ```
 ## `App` Component
-* The `App` component that maintains the list of products in its state.
-* Pass this state down to the `ProductList` component as props.
-```typescript
-interface IProduct { id: number, name: string, price: number, inStock: boolean; };
+* The application container, which renders the `ProductsList` component.
 
-const [products, setProducts] = useState<Product[]>([
-    { id: 1, name: 'Apple', price: 1, inStock: true },
-    { id: 2, name: 'Banana', price: 1, inStock: false },
-    { id: 3, name: 'Cherry', price: 2, inStock: true },
-  ]);
-```
-## `ProductList` Component:
-* Create a `ProductList` component that receives a list of products as a prop and displays them each as a re-usable `Product` component.
+## `ProductsList` Component:
+* The list of products is declared within the `ProductsList` component state.
+* Create the `ProductsList` component and display each product using a re-usable `Product` component.
 * Each product should display its `name`, `price`, and `inStock` status.
-* Use conditional rendering to display the product name in red if it is not in stock.
+* Use conditional rendering to display the product name in red if it is not in stock, and in green otherwise.
 
 ## `Product` Component:
 * Create a `Product` component that displays an individual product.
