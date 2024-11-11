@@ -34,4 +34,4 @@ const [products, setProducts] = useState<Product[]>([
 * Use props and props spread to pass down the product data.
   
 ## Event Handling:
-* Implement a button in the `Product` component to toggle the in stock status of the product.
+* Add a button to the `Product` component to toggle the in stock status of the product.
