@@ -32,9 +32,9 @@ Create a CSS file to style the components and import this CSS file into your com
 * Each product should display its `name`, `price`, and `inStock` status.
 * Use conditional rendering to display the product name in red if it is not in stock, and in green otherwise.
 
-## `Product` Component:
-* Create a `Product` component that displays an individual product.
+## `SingleProduct` Component:
+* Create a `SingleProduct` component that displays an individual product.
 * Use props and props spread to pass down the product data.
   
 ## Event Handling:
-* Add a button to the `Product` component to toggle the in stock status of the product. Because all props are readonly, to change the state of a parent component from a child component, the parent component must pass down a function reference, when called it changes the state of the parent component.
+* Add a button to the `SingleProduct` component to toggle the in stock status of the product. Because all props are readonly, to change the state of a parent component from a child component, the parent component must pass down a function reference, when called it changes the state of the parent component.
