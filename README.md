@@ -1,5 +1,5 @@
 ## CS472-Homework-09-React
-Create a React application that displays a list of products. Each product should have a `name`, `price`, and an `in stock` status. Users should be able to toggle the `inStock` status of a product by clicking a button. You should save the state within a reducer and declare an action for toggling the `inStock` status.
+Create a React application that displays a list of products. Each product should have a `name`, `price`, and an `in stock` status. Users should be able to toggle the `inStock` status of a product by clicking a button. 
 
 ```typescript
 interface Product { id: number, name: string, price: number, inStock: boolean; };
