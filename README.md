@@ -13,14 +13,15 @@ const initial_state: State = [
 ```
 
 ## Styling:
-Create a CSS file to style the components and import this CSS file into your components.
+Install [Tailwindcss](https://tailwindcss.com/docs/guides/vite) and extend the `components` layer with the following styles:
 ```css
-.out-of-stock {
-  color: red;
-}
-
-.in-stock {
-  color: green;
+@layer components {
+   .out-of-stock {
+        @apply text-red-500;
+    }
+   .in-stock {
+        @apply text-green-500;
+    } 
 }
 ```
 ## `App` Component
@@ -38,3 +39,5 @@ Create a CSS file to style the components and import this CSS file into your com
   
 ## Event Handling:
 * Add a button to the `SingleProduct` component to toggle the in stock status of the product. Because all props are readonly, to change the state of a parent component from a child component, the parent component must pass down a function reference, when called it changes the state of the parent component.
+
+Note: Solve the question in two different ways; first declare the state with `useState()`, later declare the state with `useReducer()`.
